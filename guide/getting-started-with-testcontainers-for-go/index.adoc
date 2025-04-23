@@ -98,7 +98,7 @@ include::{codebase}/customer/repo.go[]
 
 Let's understand what is going on here:
 
-* We have defined a `Repository` struct with a field of type `*pgc.Conn` which will be used for performing database operations.
+* We have defined a `Repository` struct with a field of type `*pgx.Conn` which will be used for performing database operations.
 * We have defined a helper function `NewRepository(connStr)` that takes a database connection string and initializes `Repository`.
 * Then we have implemented `CreateCustomer()` and `GetCustomerByEmail()` methods on the `Repository` receiver.
 
